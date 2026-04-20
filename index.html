@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konny Alucema · Dev Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cur-dot" id="curDot"></div>
+  <div class="cur-ring" id="curRing"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">KA<span class="logo-star">✦</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#story">Mi historia</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#certs">Certificados</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          Disponible · Bucaramanga, Colombia
+        </div>
+        <h1 class="hero-name">
+          <em>Konny</em>
+          <span>Alucema</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-bar"></span>
+          <span id="typeText"></span><span class="caret">_</span>
+        </div>
+        <p class="hero-bio">
+          Full Stack Developer en formación constante — apasionada por construir
+          experiencias digitales limpias, escalables y con propósito real.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-petal">Ver proyectos</a>
+          <a href="#certs" class="btn-ghost">Ver certificados →</a>
+        </div>
+        <div class="pills">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>C#</span><span>.NET</span><span>MySQL</span>
+          <span>Java</span><span>Git</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-universe">
+          <div class="orbit o1">
+            <div class="onode" style="--a:0deg"><code>{ }</code></div>
+            <div class="onode" style="--a:120deg"><code>&lt;/&gt;</code></div>
+            <div class="onode" style="--a:240deg"><code>SQL</code></div>
+          </div>
+          <div class="orbit o2">
+            <div class="onode" style="--a:60deg"><code>API</code></div>
+            <div class="onode" style="--a:180deg"><code>.NET</code></div>
+            <div class="onode" style="--a:300deg"><code>GIT</code></div>
+          </div>
+          <div class="photo-wrap">
+            <div class="photo-glow"></div>
+            <div class="photo-circle">
+              <img src="img/foto_Perfil.png" alt="Konny" class="pic" id="profilePic" />
+              <div class="pic-placeholder" id="picPlaceholder">
+                <div class="pic-initials">KA</div>
+              </div>
+            </div>
+            <div class="corner c-tl"></div>
+            <div class="corner c-tr"></div>
+            <div class="corner c-bl"></div>
+            <div class="corner c-br"></div>
+          </div>
+          <div class="stat-card s-r">
+            <span class="stat-i">✦</span>
+            <div><strong>3</strong><span>proyectos</span></div>
+          </div>
+          <div class="stat-card s-l">
+            <span class="stat-i">◈</span>
+            <div><strong>4</strong><span>certs</span></div>
+          </div>
+          <div class="stat-card s-b">
+            <span class="stat-i">❋</span>
+            <div><strong>Full Stack</strong><span>Dev</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">↓ scroll</div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="about sec" id="about">
+    <div class="container">
+      <div class="slabel">// sobre_mi</div>
+      <h2 class="stitle">Quién soy<span class="da">.</span></h2>
+      <div class="about-grid">
+        <div class="about-prose">
+          <p>Soy <mark>Konny Liseth Alucema Torres</mark>, desarrolladora Full Stack con formación en CampusLands y el SENA, actualmente fortaleciendo mi base técnica en la universidad.</p>
+          <p>Me caracterizo por ser proactiva, con gran capacidad de escucha y enfocada en entender las necesidades reales de cada proyecto. Lo que comenzó como un camino inesperado es hoy la carrera que elijo cada día.</p>
+          <div class="comp-tags">
+            <span>Liderazgo</span><span>Creatividad</span><span>Empatía</span>
+            <span>Disciplina</span><span>Proactividad</span><span>Trabajo en equipo</span>
+            <span>Adaptabilidad</span><span>Comunicación</span>
+          </div>
+        </div>
+        <div class="about-skills">
+          <h4>Frontend</h4>
+          <div class="sbar"><div class="sl"><span>HTML / CSS</span><span>90%</span></div><div class="st"><div style="--w:90%"></div></div></div>
+          <div class="sbar"><div class="sl"><span>JavaScript</span><span>75%</span></div><div class="st"><div style="--w:75%"></div></div></div>
+          <h4>Backend</h4>
+          <div class="sbar"><div class="sl"><span>C# / .NET Core</span><span>70%</span></div><div class="st"><div style="--w:70%"></div></div></div>
+          <div class="sbar"><div class="sl"><span>MySQL</span><span>80%</span></div><div class="st"><div style="--w:80%"></div></div></div>
+          <div class="sbar"><div class="sl"><span>Java</span><span>60%</span></div><div class="st"><div style="--w:60%"></div></div></div>
+        </div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-yr">2021 – 2022</span>
+              <span class="tl-r">Técnico Asistente Administrativo</span>
+              <span class="tl-p">SENA · Floridablanca</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-yr">2023</span>
+              <span class="tl-r">Técnico en Desarrollo de Software</span>
+              <span class="tl-p">CampusLands · Floridablanca</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot active"></div>
+            <div class="tl-body">
+              <span class="tl-yr">2024 – 2025 · Culminado ✦</span>
+              <span class="tl-r">Técnico en Desarrollo de Software</span>
+              <span class="tl-p">SENA · Girón</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MI HISTORIA -->
+  <section class="story sec" id="story">
+    <div class="story-watermark">HISTORIA</div>
+    <div class="container">
+      <div class="slabel">// mi_trayectoria</div>
+      <h2 class="stitle story-h">Del miedo al código:<br><em>Mi camino inesperado</em></h2>
+      <div class="story-wrap">
+        <div class="story-quote">
+          <div class="quote-box">
+            <span class="qmark open">"</span>
+            <p>A los 17 años, mi vida tomó un rumbo que yo no había planeado. Recién graduada del colegio y por consejo de mi padre, me encontré frente a una pantalla de comandos, intentando entender un mundo que me parecía ajeno. En ese entonces, la programación no era mi sueño; era un desafío que acepté casi por compromiso, sin saber que se convertiría en mi vocación.</p>
+            <span class="qmark close">"</span>
+          </div>
+        </div>
+        <div class="chapters">
+          <div class="chapter">
+            <div class="ch-marker"><div class="ch-num">01</div><div class="ch-line"></div></div>
+            <div class="ch-body">
+              <h3>El reto de la confianza</h3>
+              <p>Mis inicios en Campuslands fueron una batalla constante contra el autosabotaje. En cada evaluación y en cada filtro de selección, el miedo me decía que no era lo suficientemente buena o que el tiempo se me agotaba. Sin embargo, cada filtro superado fue una pequeña victoria que transformó mi inseguridad en curiosidad, y mi curiosidad en pasión.</p>
+              <p>Descubrí que programar no se trata solo de sintaxis, sino de la resiliencia para encontrar soluciones donde otros ven errores.</p>
+              <div class="ch-tag">Campuslands · 2023</div>
+            </div>
+          </div>
+          <div class="chapter">
+            <div class="ch-marker"><div class="ch-num">02</div><div class="ch-line"></div></div>
+            <div class="ch-body">
+              <h3>Raíces y Crecimiento</h3>
+              <p>Para hacer mis bases más sólidas, decidí profundizar mis conocimientos en el SENA. Allí nació <em>CampusLab</em>, mi proyecto de grado y un tributo a la institución donde planté mis raíces como programadora. Superar los exámenes de ingreso y cada etapa académica me dio la seguridad que hoy me define: la certeza de que puedo aprender cualquier tecnología si le dedico la lógica y el esfuerzo necesario.</p>
+              <div class="ch-tag">SENA · Girón · 2024</div>
+            </div>
+          </div>
+          <div class="chapter">
+            <div class="ch-marker"><div class="ch-num">03</div><div class="ch-line last"></div></div>
+            <div class="ch-body">
+              <h3>Presente y Visión</h3>
+              <p>Actualmente, como estudiante universitaria y desarrolladora enfocada en Java, Python y MySQL, entiendo que la madurez profesional no significa no tener miedo, sino saber qué hacer con él. Lo que comenzó como un camino sugerido por mi padre es hoy la carrera que elijo cada día.</p>
+              <div class="story-closing">
+                <p>No empecé soñando con líneas de código,<br>pero hoy mi mayor orgullo es todo lo que soy capaz de construir con ellas.</p>
+                <em>— Estoy lista para transformar desafíos complejos en software de impacto ✦</em>
+              </div>
+              <div class="ch-tag">Presente · Universidad</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="projects sec" id="projects">
+    <div class="container">
+      <div class="slabel">// proyectos</div>
+      <h2 class="stitle">Mi trabajo<span class="da">.</span></h2>
+      <div class="proj-grid">
+
+        <div class="pcard">
+          <div class="pcard-top"><span class="pnum">01</span>
+            <div class="plinks">
+              <a href="#" class="plink" title="Ver demo">↗</a>
+              <a href="#" class="plink" title="Ver repositorio">⌥</a>
+            </div>
+          </div>
+          <h3>Restaurante Caprichos</h3>
+          <p>Plataforma digital para restaurante-heladería con registro/login de usuarios, gestión de inventario, sistema de reservas y panel administrador. Diseño responsive y moderno.</p>
+          <div class="ptags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span></div>
+        </div>
+
+        <div class="pcard">
+          <div class="pcard-top"><span class="pnum">02</span>
+            <div class="plinks">
+              <a href="#" class="plink" title="Ver demo">↗</a>
+              <a href="#" class="plink" title="Ver repositorio">⌥</a>
+            </div>
+          </div>
+          <h3>HealthCore</h3>
+          <p>Landing page moderna y adaptable para el sector salud. Presenta servicios y profesionales, facilitando la comunicación con pacientes. Preparada para integraciones futuras.</p>
+          <div class="ptags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="pcard featured">
+          <div class="feat-badge">★ Destacado</div>
+          <div class="pcard-top"><span class="pnum">03</span>
+            <div class="plinks">
+              <a href="#" class="plink" title="Ver demo">↗</a>
+              <a href="#" class="plink" title="Ver repositorio">⌥</a>
+            </div>
+          </div>
+          <h3>PushUp EnviaBack API</h3>
+          <p>API en .NET Core bajo arquitectura de capas (API, Aplicación, Dominio y Persistencia). Backend fullstack para gestionar usuarios, productos, pedidos e inventario de forma segura.</p>
+          <div class="ptags"><span>C#</span><span>.NET Core</span><span>MySQL</span><span>Arquitectura capas</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICADOS -->
+  <section class="certs sec" id="certs">
+    <div class="container">
+      <div class="slabel">// certificados</div>
+      <h2 class="stitle">Logros<span class="da">.</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-info">
+            <div class="cert-org">SENA · Regional Santander</div>
+            <h3>Técnico en Asistencia Administrativa</h3>
+            <div class="cert-date">Noviembre 2022</div>
+            <p>Título otorgado tras cumplir todos los requisitos académicos del SENA.</p>
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-icon">💡</div>
+          <div class="cert-info">
+            <div class="cert-org">CampusLands · Gobernación de Santander</div>
+            <h3>Programación Básica, Avanzada & Marketing Digital</h3>
+            <div class="cert-date">2023 · 310 horas</div>
+            <p>120h programación básica, 150h avanzada, 40h marketing digital e inglés B1.</p>
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-info">
+            <div class="cert-org">SENA</div>
+            <h3>Inglés Básico – Nivel 4</h3>
+            <div class="cert-date">Mayo 2023 · 48 horas</div>
+            <p>Cursó y aprobó Inglés Básico Nivel 4 con 48 horas de duración.</p>
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-icon">🚀</div>
+          <div class="cert-info">
+            <div class="cert-org">SENA · Centro Empresarial</div>
+            <h3>Comportamiento Emprendedor</h3>
+            <div class="cert-date">Octubre 2022 · Nota: 4.5</div>
+            <p>Aprobado con evaluación Apto (A) — equivalencia 4.5 en 48 horas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CON CONTACTO -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="foot-brand">
+        <span class="foot-logo">KA✦</span>
+        <span class="foot-sub">Konny Liseth Alucema Torres · 2025</span>
+        <span class="foot-made">Hecho con ♡ en Bucaramanga 🇨🇴</span>
+      </div>
+      <div class="foot-contact">
+        <span class="foot-contact-label">// contáctame</span>
+        <div class="foot-links">
+          <a href="mailto:konnyalucema2005@gmail.com" class="foot-link" title="Email">
+            <span class="foot-icon">✉</span>
+            <span>konnyalucema2005@gmail.com</span>
+          </a>
+          <a href="tel:3208551651" class="foot-link" title="Teléfono">
+            <span class="foot-icon">📱</span>
+            <span>320 855 1651</span>
+          </a>
+          <a href="https://linkedin.com/in/konny-alucema" target="_blank" class="foot-link" title="LinkedIn">
+            <span class="foot-icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/DevKonnyAlucema" target="_blank" class="foot-link" title="GitHub">
+            <span class="foot-icon">⌥</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
