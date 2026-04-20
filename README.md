@@ -1,10 +1,10 @@
 # 💼 Portafolio - DevKonnyAlucema
 
 Bienvenid@s a mi portafolio web  
-Aquí podrás encontrar una recopilación de mis proyectos, habilidades y experiencia en desarrollo de software.
+Aquí podrán encontrar una recopilación de mis proyectos, habilidades y experiencia en desarrollo de software.
 
 🌐 **Demo en vivo:**  
-👉 https://devkonnyalucema.github.io/HDV_CURRICULUM/
+👉 https://devkonnyalucema.github.io/KonnyPortafolio/
 
 ---
 
@@ -78,7 +78,7 @@ API desarrollada en .NET Core bajo arquitectura por capas:
 
 ## 📌 Objetivo
 
-Este portafolio tiene como objetivo mostrar mis habilidades técnicas, proyectos desarrollados y evolución como desarrollador, sirviendo como carta de presentación profesional.
+Este portafolio tiene como objetivo mostrar mis habilidades técnicas, proyectos desarrollados y evolución como desarrolladora, sirviendo como carta de presentación profesional.
 
 ---
 
