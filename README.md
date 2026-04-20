@@ -1,6 +1,6 @@
 # 💼 Portafolio - DevKonnyAlucema
 
-Bienvenido a mi portafolio web  
+Bienvenid@s a mi portafolio web  
 Aquí podrás encontrar una recopilación de mis proyectos, habilidades y experiencia en desarrollo de software.
 
 🌐 **Demo en vivo:**  
